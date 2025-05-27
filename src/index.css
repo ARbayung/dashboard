@@ -1,0 +1,348 @@
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+button {
+ cursor: pointer;
+}
+
+/* GLOBAL STYLES */
+p, div, span, h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font);
+}
+:root {
+  --primary-color: #FF5B31;
+  --secondary-color: #0F0F0F;
+  --background-color: #1F1F1F;
+  --text: #FFFFFF;
+  --text2: #FFCEC2;
+  --text3: #DDDDDD;
+  --border: #2D2D2D;
+  --font: calibri;
+}
+
+.home{
+  display: flex;
+  flex-direction: row;
+}
+
+/* DASHBOARD */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--background-color);
+}
+
+.tickets-summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20em;
+  width: auto;
+  margin: 1em;
+  color: var(--text3);
+  font-family: var(--font);
+}
+
+.tickets-component {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 20em;
+  height: 10em;
+  background-color: var(--border);
+  color: var(--text3);
+  font-family: var(--font);
+  margin:0.5em;
+  border-radius: 100px;
+}
+
+.f-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.tickets-summary div h1 {
+  font-size:5em;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.tasks-summary{
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  background-color: var(--text3);
+  height: 20em;
+  width: 20em;
+  color: black;
+  padding: 1em;
+  overflow: visible;
+}
+
+.tasks-summary-side{
+  display:flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.tasks-summary-side div{
+  display: flex;
+  flex-direction:column;
+  justify-content: space-evenly;
+  height: 50%;
+}
+
+.tasks-summary h1{
+  font-size: 6em;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.dashboard-section-top{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-table{
+  height: 50%;
+  margin: 1em;
+  height: 100%;
+}
+/* NAVBAR */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25em;
+  height: 100vh;
+  background-color: var(--border);
+  font-family: var(--font)
+}
+
+.navbar ul {
+  list-style: none;
+}
+
+.navbar div{
+  width: 100%;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  padding: 2em;
+}
+
+.navbar ul li {
+  width: auto;
+  color: var(--border);
+  padding: 1.7em 0 1.7em 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: medium;
+  font-weight: 500;
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  color: var(--text3);
+  letter-spacing: 1px;
+}
+
+.logo {
+  height: auto;
+  width:100%;
+  padding-top: 4em;
+}
+
+/* BANNER */
+
+.dashboard-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  height: 40%;
+  width: auto;
+  padding: 1em;
+  color: var(--text3);
+  font-family: var(--font);
+
+}
+
+.dashboard-banner h1 {
+  font-size: 6em;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+.dashboard-banner h2 {
+  font-size: 1.5em;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-left: 8px;
+}
+
+/* DIRECTORY */
+.directory {
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: flex-start;
+  width: 100%;
+  padding: 1em 2em 1em 2em;
+  background-color: var(--background-color);
+  color: var(--text3);
+  font-family: var(--font);
+}
+
+.directory h1{
+  font-size: 2em;
+  font-weight: 100;
+  letter-spacing: 1px;
+  padding-bottom: 1em;
+}
+
+
+/* ITREQUEST */
+.itRequest {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1em 2em 1em 2em;
+  background-color: var(--background-color);
+  color: var(--text3);
+  font-family: var(--font);
+}
+
+.itRequest form{
+  margin-top: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--border);
+  height: 30em;
+  width: 20em;
+}
+
+.itRequest form div{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+  padding: 1em;
+}
+
+.itRequest select{
+  margin-top: 0.5em;
+  width: 100%;
+  height: 2em;
+}
+
+.itRequest textarea{
+  margin-top: 0.5em;
+  width:100%;
+  height: 10em;
+}
+
+.itRequest button{
+  width: 100%;
+  height: 3em;
+  margin-top: 0.5em;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--text3);
+}
+
+/* TODO */
+.todo{
+  background-color: var(--background-color);
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 3em;
+  background-color: white;
+  margin-bottom: 1px;
+}
+
+.todo form h1{
+  color: black;
+}
+
+.todo form input{
+  width: 100%;
+  height: 3em;
+  margin: 0.5em;
+  padding: 0.5em;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+.todo form button{
+  width: 100%;
+  height: 3em;
+  margin: 0.5em;
+  padding: 0.5em;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--text3);
+}
+
+.todo-table{
+  width: 50%;
+  background-color: red;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* TICKETS */
+.tickets {
+  width: 100%;
+  background-color: var(--background-color);
+  padding: 1em;
+  color: var(--text3);
+}
+
+.ticket-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1em;
+  background-color: var(--border);
+  color: var(--text3);
+  padding: 1em;
+}

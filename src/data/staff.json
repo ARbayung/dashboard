@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Alice Smith",
+        "role": "Video Producer",
+        "email": "alice@brrmedia.co.uk",
+        "status": "active",
+        "lastLogin": "2024-04-01T10:00:00Z",
+        "driveUsage": "3.5 GB",
+        "device": "MacBook Pro"
+    },
+    {
+        "id": 2,
+        "name": "Alice Smith",
+        "role": "Video Producer",
+        "email": "alice@brrmedia.co.uk",
+        "status": "active",
+        "lastLogin": "2024-04-01T10:00:00Z",
+        "driveUsage": "3.5 GB",
+        "device": "MacBook Pro"
+    },
+    {
+        "id": 3,
+        "name": "Alice Smith",
+        "role": "Video Producer",
+        "email": "alice@brrmedia.co.uk",
+        "status": "active",
+        "lastLogin": "2024-04-01T10:00:00Z",
+        "driveUsage": "3.5 GB",
+        "device": "MacBook Pro"
+    }
+]
